@@ -8,11 +8,12 @@ class StudyParticipantsController < ApplicationController
   end
 
   def create
-    @study_participant = StudyParticipant.new(study_participant_params)
+    enrollment = StudyEnrollment.new(study_participant_params)
 
-    if @study_participant.save
+    if enrollment.create
       redirect_to study_study_participants_path
     else
+      @study_participant = enrollment.study_participant
       render :new
     end
   end
