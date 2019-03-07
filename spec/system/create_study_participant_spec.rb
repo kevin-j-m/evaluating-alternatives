@@ -2,6 +2,9 @@ require "rails_helper"
 
 RSpec.describe "Creating a study participant", type: :system do
   scenario "Enrolling a participant in a study sends a welcome email" do
+    user = create :user
+    sign_in user
+
     study = create :study
     visit new_study_study_participant_path(study)
 

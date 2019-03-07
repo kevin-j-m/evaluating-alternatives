@@ -13,6 +13,12 @@
     <% if flash[:warning] %>
       <div class="flash alert-warning" data-role="warning"><%= flash[:warning] %></div>
     <% end %>
+    <% if flash[:notice] %>
+      <div class="flash alert-notice" data-role="notice"><%= flash[:notice] %></div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div class="flash alert-alert" data-role="alert"><%= flash[:alert] %></div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
