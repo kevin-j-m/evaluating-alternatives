@@ -10,8 +10,4 @@ class PersonalInformation
   def study_participant
     @study_participant ||= StudyParticipant.find(@study_participant_id)
   end
-
-  def edit_warning_message
-    I18n.t("personal_information.edit.warning")
-  end
 end
