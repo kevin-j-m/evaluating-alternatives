@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :personal_information, only: [:edit]
 
-  resources :study, only: [] do
+  resources :studies, only: [:show] do
     resources :study_participants, only: [:new, :create, :index]
   end
 end
