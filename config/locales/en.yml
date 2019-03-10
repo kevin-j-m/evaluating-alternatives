@@ -2,3 +2,6 @@ en:
   personal_information:
     edit:
       warning: "Modifying demographic information may risk your eligibility."
+  time:
+    formats:
+      long_date_only: "%B %d, %Y"
