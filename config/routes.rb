@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "study_participants#index"
 
+  resources :data_collection_events, only: [:show]
+
   resources :personal_information, only: [:edit]
 
   resources :studies, only: [:show] do
