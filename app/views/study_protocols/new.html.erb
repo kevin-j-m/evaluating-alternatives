@@ -1,0 +1,8 @@
+<%= form_with model: @study_protocol, url: study_study_protocols_path do |form| %>
+  <div class="field_with_errors">
+    <%= form.label(:instructions, for: :study_participant_instructions) %>
+    <%= form.text_field(:instructions, id: :study_participant_instructions, class: "form-control") %>
+  </div>
+
+  <%= form.submit "Submit", class: "btn btn-default action-btn" %>
+<% end %>

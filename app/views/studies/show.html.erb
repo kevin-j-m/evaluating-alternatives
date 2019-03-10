@@ -1,3 +1,9 @@
 <div class="heading">
   <p><%= @study.name %></p>
 </div>
+
+<% if @study.study_protocol.present? %>
+  <div class="protocol">
+    <%= @study.study_protocol.instructions %>
+  </div>
+<% end %>

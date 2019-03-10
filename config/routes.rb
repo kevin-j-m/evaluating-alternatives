@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   resources :studies, only: [:show] do
     resources :study_participants, only: [:new, :create, :index]
+    resources :study_protocols, only: [:new, :create]
   end
 end
