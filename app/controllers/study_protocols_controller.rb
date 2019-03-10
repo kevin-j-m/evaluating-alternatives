@@ -1,6 +1,11 @@
 class StudyProtocolsController < ApplicationController
   def new
-    @study_protocol = StudyProtocol.new(study: study)
+    if current_user.principal_investigator?
+      @study_protocol = StudyProtocol.new(study: study)
+    else
+      flash[:alert] = "Only Principal Investigators may create study protocols"
+      redirect_back(fallback_location: root_path)
+    end
   end
 
   def create
