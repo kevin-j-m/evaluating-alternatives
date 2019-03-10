@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_10_171203) do
+ActiveRecord::Schema.define(version: 2019_03_10_184151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2019_03_10_171203) do
     t.bigint "study_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "collected_at", null: false
     t.index ["study_id"], name: "index_data_collection_events_on_study_id"
   end
 

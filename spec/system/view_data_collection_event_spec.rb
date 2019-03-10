@@ -6,12 +6,12 @@ RSpec.describe "Viewing data collection event", type: :system do
     sign_in user
 
     collected_at = Time.zone.local(2019, 4, 30, 14, 0)
-    collection_event = create :data_collection_event, created_at: collected_at
+    collection_event = create :data_collection_event, collected_at: collected_at
 
     visit data_collection_event_path(collection_event)
 
     within ".summary-information .collected-date" do
-      expect(page).to have_content ("April 30, 2019")
+      expect(page).to have_content "April 30, 2019"
     end
   end
 end
