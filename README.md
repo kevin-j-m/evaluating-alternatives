@@ -24,7 +24,8 @@ Not all of these questions may be applicable in all situations, and the relative
 
 The latest iteration of the slides that accompany this presentation are
 available [here](i_know_i_can_should_i.key) in this repository. The slide deck
-in this repo is in macOS's Keynote format.
+in this repo is in macOS's Keynote format. A copy of the slides are also
+available on [SpeakerDeck](https://speakerdeck.com/kevinmurphy/i-know-i-can-but-should-i-evaluating-alternatives).
 
 ## Code Examples
 
@@ -53,3 +54,8 @@ presentation.
 ### Consistency
 
 * Warn user about [consequences](https://github.com/kevin-j-m/evaluating-alternatives/commit/f3267da83ebbb6c710d42c3207e15ffb56a9d829) of editing personal information
+
+## Seen At
+
+* [BostonRB](https://www.meetup.com/bostonrb/events/260131301/) - April 9, 2019
+* [RailsConf](https://www.youtube.com/watch?v=2NiePLJVjNI) - May 1, 2019
